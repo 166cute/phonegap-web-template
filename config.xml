@@ -11,6 +11,12 @@
     <!--  allows access to any external resource. -->
     <access origin="*"/>
     <allow-navigation href="*" />
+    //相關config設定
+    <allow-intent href="geo:*" />
+    <access origin="http://*.google.com" />
+    <access origin="http://google.com" />
+    <access origin="https://google.com" />
+    <access origin="http://maps.google.com" />
   
     <content src="index.html"/>
     <icon src="icon.png"/>
@@ -28,4 +34,11 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~1.7.1" />
     <plugin name="cordova-plugin-network-information" spec="~1.3.3" />
     <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
+    //Geolocation
+    <plugin name="cordova-plugin-geolocation" spec="~2.4.3">
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="" />
+    </plugin>
+
+//白名單
+    <plugin name="cordova-plugin-whitelist" spec="1" />
 </widget>
